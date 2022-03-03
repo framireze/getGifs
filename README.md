@@ -68,3 +68,19 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+###### Pasos para subir a produccion --> Ref: https://www.udemy.com/course/react-cero-experto/learn/lecture/19762390#content
+1) ejecutamos:
+npm run build
+Crea el archivo: build
+
+2) Renombrar build --> docs , para que lo reconozca el github (este busca una carpeta docs)
+
+3) Subimos nuestros cambios en nuestro repositorio de Github
+Buscamos settings --> GitHub Pages
+
+4) Seleccionamos el branch, la carpeta raiz (docs)  --> Luego guardar cambios       //Puede tomar minutos para q actualice
+
+NOTA: Si no levanta debemos ingresar al docs y editar el "index.html" y renombramos las referencias añadiendole un punto:
+ejemplo: <link rel="manifest" href="/manifest.json" />              ==> <link rel="manifest" href="./manifest.json" />
